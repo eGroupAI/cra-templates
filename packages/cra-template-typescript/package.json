@@ -7,7 +7,7 @@
     "template",
     "typescript"
   ],
-  "description": "The base TypeScript template for eGroup team.",
+  "description": "The base react TypeScript template for eGroup team.",
   "main": "template.json",
   "repository": {
     "type": "git",
