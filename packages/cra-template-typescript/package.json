@@ -1,13 +1,16 @@
 {
   "name": "@e-group/cra-template-typescript",
   "version": "1.0.2",
+  "private": false,
+  "author": "eGroup Team",
+  "description": "The base react TypeScript template for eGroup team.",
   "keywords": [
+    "eGroup",
     "react",
     "create-react-app",
     "template",
     "typescript"
   ],
-  "description": "The base react TypeScript template for eGroup team.",
   "main": "template.json",
   "repository": {
     "type": "git",
