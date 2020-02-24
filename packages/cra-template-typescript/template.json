@@ -9,6 +9,32 @@
       "@types/react-dom": "^16.9.0",
       "@types/jest": "^24.0.0",
       "typescript": "~3.7.2"
+    },
+    "scripts": {
+      "build": "react-scripts build && gulp production",
+      "build:test-server": "PUBLIC_URL=/source REACT_APP_S3_URL=path-to-your-aws-s3-test-bucket react-scripts build && gulp production"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "development": [
+        "ie 11",
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+        "prettier --single-quote --write",
+        "git add"
+      ]
     }
   }
 }

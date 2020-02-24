@@ -1,17 +1,17 @@
 # cra-template-typescript
 
-This is the official TypeScript template for [Create React App](https://github.com/facebook/create-react-app).
+This is the official TypeScript template for eGroup team.
 
-To use this template, add `--template typescript` when creating a new app.
+To use this template, add `--template @e-group/cra-template-typescript` when creating a new app.
 
 For example:
 
 ```sh
-npx create-react-app my-app --template typescript
+npx create-react-app my-app --template @e-group/cra-template-typescript
 
 # or
 
-yarn create react-app my-app --template typescript
+yarn create react-app my-app --template @e-group/cra-template-typescript
 ```
 
 For more information, please refer to:
