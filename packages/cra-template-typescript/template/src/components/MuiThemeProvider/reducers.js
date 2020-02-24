@@ -1,7 +1,7 @@
 import { fromJS } from 'immutable';
 import { handleActions } from 'redux-actions';
 import { HANDLE_CHANGE_THEME_OPTIONS } from './redux';
-import theme from 'theme';
+import theme from './theme';
 
 const reducer = handleActions(
   {
