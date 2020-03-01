@@ -3,6 +3,7 @@
     "dependencies": {
       "@date-io/core": "^1.3.6",
       "@date-io/moment": "1.3.13",
+      "@e-group/devops": "^6.14.1",
       "@e-group/hooks": "^6.14.1",
       "@e-group/material": "^3.21.2",
       "@e-group/material-form": "^3.21.2",
@@ -37,9 +38,12 @@
       "clsx": "^1.1.0",
       "connected-react-router": "^6.7.0",
       "history": "^4.10.1",
+      "husky": "^4.2.3",
       "immutable": "^4.0.0-rc.12",
+      "lint-staged": "^10.0.7",
       "moment": "^2.24.0",
       "normalizr": "^3.6.0",
+      "prettier": "^1.19.1",
       "query-string": "^6.11.0",
       "react-app-polyfill": "^1.0.6",
       "react-cookie": "^4.0.3",
@@ -59,12 +63,6 @@
       "smoothscroll-polyfill": "^0.4.4",
       "typescript": "~3.7.2",
       "validator": "^12.2.0"
-    },
-    "devDependencies": {
-      "@e-group/devops": "^6.14.1",
-      "husky": "^4.2.3",
-      "lint-staged": "^10.0.7",
-      "prettier": "^1.19.1"
     },
     "scripts": {
       "build": "react-scripts build && gulp production",
