@@ -6,13 +6,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import '@fortawesome/fontawesome-free/css/all.css';
 import smoothscroll from 'smoothscroll-polyfill';
-import Beforeunload from '@e-group/utils/Beforeunload';
 
 // init smoothscroll-polyfill
 smoothscroll.polyfill();
-
-// register window.onbeforeunload
-Beforeunload.register();
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
