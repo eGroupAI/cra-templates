@@ -2,7 +2,7 @@ import { applyMiddleware, createStore } from 'redux';
 import { createEpicMiddleware } from 'redux-observable';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { createBrowserHistory } from 'history';
-import { routerMiddleware } from 'connected-react-router/immutable';
+import { routerMiddleware } from 'connected-react-router';
 import createHandleApisMiddleware from '@e-group/redux-modules/createHandleApisMiddleware';
 
 import { createRootReducer } from './root';

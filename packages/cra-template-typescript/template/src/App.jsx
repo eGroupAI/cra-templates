@@ -10,7 +10,7 @@ import Snackbar from '@e-group/material-lab/Snackbar';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import { CookiesProvider } from 'react-cookie';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router/immutable';
+import { ConnectedRouter } from 'connected-react-router';
 import MuiThemeProvider from 'components/MuiThemeProvider';
 
 export const DIALOG = 'globalAlertDialog';

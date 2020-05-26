@@ -1,5 +1,5 @@
 import { of, concat } from 'rxjs';
-import { replace } from 'connected-react-router/immutable';
+import { replace } from 'connected-react-router';
 import getDeviceInfo from '@e-group/utils/getDeviceInfo';
 import { openDialog, setDialogData } from '@e-group/redux-modules/dialogs';
 import { DIALOG } from 'App';
