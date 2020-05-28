@@ -12,7 +12,7 @@ import Theme from '@e-group/material/Theme';
 const MuiThemeProvider = props => {
   const themeOptions = useSelector(getThemeOptions);
 
-  return <Theme theme={createMuiTheme(themeOptions.toJS())} {...props} />;
+  return <Theme theme={createMuiTheme(themeOptions)} {...props} />;
 };
 
 export default MuiThemeProvider;

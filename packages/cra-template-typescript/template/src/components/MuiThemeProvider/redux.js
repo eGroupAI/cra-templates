@@ -11,5 +11,4 @@ export const HANDLE_CHANGE_THEME_OPTIONS = handleChangeThemeOptions().type;
 /**
  * Selectors
  */
-export const getThemeOptions = state =>
-  state.getIn(['components', 'MuiThemeProvider']);
+export const getThemeOptions = state => state.components.MuiThemeProvider;
