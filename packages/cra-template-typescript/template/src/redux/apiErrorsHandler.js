@@ -9,7 +9,7 @@ export default function apiErrorsHandler(error, { state$, action }) {
     browserDescription: window.navigator.userAgent,
     jsonData: {
       action,
-      store: state$.value.toJS(),
+      store: state$.value,
       deviceInfo: getDeviceInfo()
     },
     level: 'ERROR'
