@@ -1,6 +1,6 @@
 {
   "name": "@e-group/cra-template-typescript",
-  "version": "1.0.16",
+  "version": "1.1.0",
   "private": false,
   "author": "eGroup Team",
   "description": "The base react TypeScript template for eGroup team.",
