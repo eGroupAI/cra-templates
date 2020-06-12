@@ -1,5 +1,5 @@
 import axios from 'axios';
-import queryString from 'query-string';
+// import queryString from 'query-string';
 
 const fetcher = axios.create({
   baseURL: process.env.REACT_APP_API_BASE_URL,
