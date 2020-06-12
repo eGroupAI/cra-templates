@@ -12,6 +12,7 @@ import { CookiesProvider } from 'react-cookie';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import MuiThemeProvider from 'components/MuiThemeProvider';
+import RouterRoot from 'components/RouterRoot';
 
 export const DIALOG = 'globalAlertDialog';
 export const SNACKBAR = 'globalSnackbar';
@@ -33,13 +34,7 @@ function App() {
                 }}
                 autoHideDuration={2000}
               />
-              <div className="App">
-                <header className="App-header">
-                  <p>
-                    Edit <code>src/App.jsx</code> and save to reload.
-                  </p>
-                </header>
-              </div>
+              <RouterRoot />
             </MuiPickersUtilsProvider>
           </MuiThemeProvider>
         </CookiesProvider>
