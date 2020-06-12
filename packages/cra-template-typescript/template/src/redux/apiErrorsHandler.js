@@ -1,8 +1,5 @@
-import { of, concat } from 'rxjs';
-import { replace } from 'connected-react-router';
+import { of } from 'rxjs';
 import getDeviceInfo from '@e-group/utils/getDeviceInfo';
-import { openDialog, setDialogData } from '@e-group/redux-modules/dialogs';
-import { DIALOG } from 'App';
 
 import apis from './apis';
 
