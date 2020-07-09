@@ -3,7 +3,7 @@ import React from 'react';
 import withReduxDialog from '@e-group/redux-modules/withReduxDialog';
 import withReduxSnackbar from '@e-group/redux-modules/withReduxSnackbar';
 import { history, store } from 'redux/configureStore';
-import MomentUtils from '@date-io/moment';
+import DateFnsUtils from '@date-io/date-fns';
 
 import AlertDialog from '@e-group/material-module/AlertDialog';
 import Snackbar from '@e-group/material-lab/Snackbar';
@@ -25,7 +25,7 @@ function App() {
       <ConnectedRouter history={history}>
         <CookiesProvider>
           <MuiThemeProvider>
-            <MuiPickersUtilsProvider utils={MomentUtils}>
+            <MuiPickersUtilsProvider utils={DateFnsUtils}>
               <GlobalAlertDialog />
               <GlobalSnackbar
                 anchorOrigin={{
