@@ -37,6 +37,7 @@
       "connected-react-router": "^6.8.0",
       "date-fns": "^2.14.0",
       "history": "^4.10.1",
+      "http-proxy-middleware": "^1.0.5",
       "husky": "^4.2.5",
       "lint-staged": "^10.2.11",
       "normalizr": "^3.6.0",
@@ -67,7 +68,6 @@
       "build": "react-scripts build && gulp production",
       "build:test-server": "PUBLIC_URL=/source REACT_APP_S3_URL=path-to-your-aws-s3-test-bucket react-scripts build && gulp production"
     },
-    "proxy": "http://localhost:8080",
     "eslintConfig": {
       "extends": "react-app"
     },
