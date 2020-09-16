@@ -1,7 +1,7 @@
 import React from 'react';
 
-import withReduxDialog from '@e-group/redux-modules/withReduxDialog';
-import withReduxSnackbar from '@e-group/redux-modules/withReduxSnackbar';
+import { withReduxDialog } from '@e-group/redux-modules/dialogs';
+import { withReduxSnackbar } from '@e-group/redux-modules/snackbars';
 import { history, store } from 'redux/configureStore';
 import DateFnsUtils from '@date-io/date-fns';
 
@@ -17,7 +17,7 @@ import RouterRoot from 'components/RouterRoot';
 export const DIALOG = 'globalAlertDialog';
 export const SNACKBAR = 'globalSnackbar';
 const GlobalAlertDialog = withReduxDialog(DIALOG)(AlertDialog);
-const GlobalSnackbar = withReduxSnackbar(SNACKBAR)(Snackbar);
+const GlobalSnackbar = withReduxSnackbar(SNACKBAR)<HTMLDivElement, any>(Snackbar);
 
 function App() {
   return (

@@ -1,11 +1,11 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
+import smoothscroll from 'smoothscroll-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import '@fortawesome/fontawesome-free/css/all.css';
-import smoothscroll from 'smoothscroll-polyfill';
 
 // init smoothscroll-polyfill
 smoothscroll.polyfill();

@@ -13,7 +13,7 @@ const tools = {
   /**
    * Log errors.
    */
-  fetchPostLogs: payload => fetcher.post('/logs', payload)
+  fetchPostLogs: (payload: any) => fetcher.post('/logs', payload)
 };
 
 const basic = {
