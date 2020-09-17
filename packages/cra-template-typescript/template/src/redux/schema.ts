@@ -1,11 +1,11 @@
-import { schema } from 'normalizr';
+import { schema } from "normalizr";
 
 // User
 export const user = new schema.Entity(
-  'users',
+  "users",
   {},
   {
-    idAttribute: 'userId'
+    idAttribute: "userId",
   }
 );
 export const users = [user];

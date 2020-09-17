@@ -1,10 +1,10 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme } from "@material-ui/core";
 
 const fontFamily = [
   '"Segoe UI"',
-  'SegoeUI',
+  "SegoeUI",
   '"Microsoft JhengHei"',
-  '微軟正黑體',
+  "微軟正黑體",
   '"SF Pro TC"',
   '"SF Pro Display"',
   '"SF Pro Icons"',
@@ -12,16 +12,16 @@ const fontFamily = [
   '"Helvetica Neue"',
   '"Helvetica"',
   '"Arial"',
-  'sans-serif'
-].join(',');
+  "sans-serif",
+].join(",");
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily
+    fontFamily,
   },
 });
 
 // for develop
-if (process.env.NODE_ENV !== 'production') console.log(theme);
+if (process.env.NODE_ENV !== "production") console.log(theme);
 
 export default theme;

@@ -1,8 +1,8 @@
-import { of } from 'rxjs';
-import getDeviceInfo from '@e-group/utils/getDeviceInfo';
+import { of } from "rxjs";
+import getDeviceInfo from "@e-group/utils/getDeviceInfo";
 
-import { Outcome } from '@e-group/utils/getDeviceInfo/getDeviceInfo';
-import apis from './apis';
+import { Outcome } from "@e-group/utils/getDeviceInfo/getDeviceInfo";
+import apis from "./apis";
 
 type ErrorPayload = {
   function: string;
@@ -12,20 +12,20 @@ type ErrorPayload = {
     store: any;
     deviceInfo?: Outcome[];
   };
-  level: 'ERROR' | 'INFO';
+  level: "ERROR" | "INFO";
   message?: string;
 };
 
 export default function apiErrorsHandler(error: any, { state$, action }: any) {
   let payload: ErrorPayload = {
-    function: 'apiErrorsHandler',
+    function: "apiErrorsHandler",
     browserDescription: window.navigator.userAgent,
     jsonData: {
       action,
       store: state$.value,
       deviceInfo: getDeviceInfo(),
     },
-    level: 'ERROR',
+    level: "ERROR",
   };
 
   // handle server side errors
@@ -41,7 +41,7 @@ export default function apiErrorsHandler(error: any, { state$, action }: any) {
   // handle client side errors
   payload = {
     ...payload,
-    message: error.message
+    message: error.message,
   };
   apis.tools.fetchPostLogs(payload);
   return of();

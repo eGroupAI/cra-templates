@@ -1,1 +1,1 @@
-export { default } from './MuiThemeProvider';
+export { default } from "./MuiThemeProvider";

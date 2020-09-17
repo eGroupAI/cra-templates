@@ -1,1 +1,1 @@
-export { default } from './PrivateHome'
+export { default } from "./PrivateHome";

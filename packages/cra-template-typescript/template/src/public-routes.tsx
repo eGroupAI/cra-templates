@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import { Redirect } from 'react-router-dom';
-import Home from 'pages/Home'
+import { Redirect } from "react-router-dom";
+import Home from "pages/Home";
 
 export default [
   {
     component: Home,
-    path: '/',
-    exact: true
+    path: "/",
+    exact: true,
   },
   {
-    path: '/*',
-    render: () => <Redirect to="/" />
-  }
+    path: "/*",
+    render: () => <Redirect to="/" />,
+  },
 ];

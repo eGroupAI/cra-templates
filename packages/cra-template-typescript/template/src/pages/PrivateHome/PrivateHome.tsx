@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const PrivateHome = () => {
-  return (
-    <p>
-      Private Home page
-    </p>
-  )
-}
+  return <p>Private Home page</p>;
+};
 
-export default PrivateHome
+export default PrivateHome;
