@@ -1,10 +1,10 @@
 import { createReducer } from "@reduxjs/toolkit";
 import merge from "lodash.merge";
-import { HANDLE_CHANGE_THEME_OPTIONS } from "./redux";
+import { handleChangeThemeOptions } from "./redux";
 import theme from "./theme";
 
 const reducer = createReducer(theme, {
-  [HANDLE_CHANGE_THEME_OPTIONS]: (state, action) =>
+  [handleChangeThemeOptions.type]: (state, action) =>
     merge(state, action.payload),
 });
 

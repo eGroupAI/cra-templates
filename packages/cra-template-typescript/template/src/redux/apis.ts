@@ -1,4 +1,5 @@
 import axios from "axios";
+import { LogPayload } from "./root";
 // import queryString from 'query-string';
 
 const fetcher = axios.create({
@@ -13,11 +14,12 @@ const tools = {
   /**
    * Log errors.
    */
-  fetchPostLogs: (payload: any) => fetcher.post("/logs", payload),
+  fetchPostLogs: (payload: LogPayload) => fetcher.post("/logs", payload),
 };
 
 const basic = {
   // ADD YOUR APIS HERE
+  fetchGetPosts: () => fetcher.get("https://jsonplaceholder.typicode.com/posts"),
 };
 
 export default {

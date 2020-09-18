@@ -1,23 +1,13 @@
 import { of } from "rxjs";
 import getDeviceInfo from "@e-group/utils/getDeviceInfo";
 
-import { Outcome } from "@e-group/utils/getDeviceInfo/getDeviceInfo";
+import { HandlerArgs } from "@e-group/utils/makeBasicFetchEpic";
+import { AxiosError } from "axios";
+import { LogPayload } from "./root";
 import apis from "./apis";
 
-type ErrorPayload = {
-  function: string;
-  browserDescription: string;
-  jsonData: {
-    action: string;
-    store: any;
-    deviceInfo?: Outcome[];
-  };
-  level: "ERROR" | "INFO";
-  message?: string;
-};
-
-export default function apiErrorsHandler(error: any, { state$, action }: any) {
-  let payload: ErrorPayload = {
+export default function apiErrorsHandler(error: AxiosError, { state$, action }: HandlerArgs) {
+  let payload: LogPayload = {
     function: "apiErrorsHandler",
     browserDescription: window.navigator.userAgent,
     jsonData: {

@@ -1,4 +1,4 @@
-const createGulpTasks = require('@e-group/devops/createGulpTasks');
+const { createGulpTasks } = require('@e-group/devops');
 
 const path = require('path');
 
