@@ -23,5 +23,11 @@ module.exports = {
     "import/resolver": {
       typescript: {}
     }
+  },
+  rules: {
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 };

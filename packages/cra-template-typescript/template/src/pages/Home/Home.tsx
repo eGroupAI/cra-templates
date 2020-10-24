@@ -19,12 +19,12 @@ const Home = () => {
   return (
     <p>
       Edit <code>src/App.jsx</code> and save to reload.
-      <button onClick={handleClick}>Enter private page</button>
+      <button onClick={handleClick} type="button">Enter private page</button>
       <br />
       Counts: {counts}
       <br />
-      <button onClick={() => dispatch(increment(1))}>increment</button>
-      <button onClick={() => dispatch(decrement(1))}>decrement</button>
+      <button onClick={() => dispatch(increment(1))} type="button">increment</button>
+      <button onClick={() => dispatch(decrement(1))} type="button">decrement</button>
     </p>
   );
 };

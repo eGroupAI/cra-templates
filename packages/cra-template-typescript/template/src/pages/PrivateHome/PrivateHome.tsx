@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+import { Post } from "entities";
 import FixedCenter from '@e-group/material-layout/FixedCenter'
 import { CircularProgress } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,7 +10,7 @@ import { getPosts } from "./selectors";
 
 const PrivateHome = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const posts = useSelector(getPosts)
+  const posts: Post[] = useSelector(getPosts)
 
   useEffect(() => {
     dispatch(fetchGetPosts())
