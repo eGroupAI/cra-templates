@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 
 import { Post } from "entities";
+import api from 'redux/apis'
+import useAxiosApi from '@e-group/hooks/useAxiosApi'
 import FixedCenter from '@e-group/material-layout/FixedCenter'
 import { CircularProgress } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,10 +13,15 @@ import { getPosts } from "./selectors";
 const PrivateHome = () => {
   const dispatch = useDispatch<AppDispatch>();
   const posts: Post[] = useSelector(getPosts)
+  // or use axios api
+  const { excute } = useAxiosApi(api.fetchGetPosts);
 
   useEffect(() => {
     dispatch(fetchGetPosts())
-  }, [dispatch])
+    excute().then((res) => {
+      console.log(res.data)
+    })
+  }, [dispatch, excute])
 
   if (!posts) {
     return (

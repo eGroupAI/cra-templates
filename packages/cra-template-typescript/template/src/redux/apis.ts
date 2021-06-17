@@ -1,6 +1,6 @@
 import axios from "axios";
+import queryString from 'query-string';
 import { LogPayload } from "./root";
-// import queryString from 'query-string';
 
 const fetcher = axios.create({
   baseURL: process.env.REACT_APP_API_BASE_URL,
@@ -19,7 +19,7 @@ const tools = {
 
 const basic = {
   // ADD YOUR APIS HERE
-  fetchGetPosts: () => fetcher.get("https://jsonplaceholder.typicode.com/posts"),
+  fetchGetPosts: (payload: Record<string, any>) => fetcher.get(`https://jsonplaceholder.typicode.com/posts?${queryString.stringify(payload)}`),
 };
 
 export default {
