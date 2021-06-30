@@ -19,7 +19,7 @@ const tools = {
 
 const basic = {
   // ADD YOUR APIS HERE
-  fetchGetPosts: (payload: Record<string, any>) => fetcher.get(`https://jsonplaceholder.typicode.com/posts?${queryString.stringify(payload)}`),
+  fetchGetPosts: (payload: Record<string, unknown>) => fetcher.get(`https://jsonplaceholder.typicode.com/posts?${queryString.stringify(payload)}`),
 };
 
 export default {

@@ -19,6 +19,7 @@ const PrivateHome = () => {
   useEffect(() => {
     dispatch(fetchGetPosts())
     excute().then((res) => {
+      // eslint-disable-next-line no-console
       console.log(res.data)
     })
   }, [dispatch, excute])
